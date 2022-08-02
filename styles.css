@@ -1,6 +1,4 @@
-/*                  WARNING                    */
-/*           THIS IS AWFUL TO READ.            */
-/* I DONT CARE HOW YOU ARE GOING TO READ THIS. */
+@import url('https://fonts.googleapis.com/css?family=Google+Sans&display=swap');
 
 html, body {
     scroll-behavior: smooth;
@@ -15,7 +13,7 @@ body {
 }
 
 @keyframes colorchange {
-    0%   {color: #f00;}
+    0%   {color: #ff0000;}
     12%  {color: #ffa500;}
     24%  {color: #ffff00;}
     36%  {color: #008000;}
@@ -23,7 +21,7 @@ body {
     60%  {color: #0000ff;}
     72%  {color: #800080;}
     84%  {color: #ffc0cb;}
-    100% {color: #f00;}
+    100% {color: #ff0000;}
 }
 
 .main {
@@ -32,6 +30,7 @@ body {
 
 .introclass {
     text-align: center;
+    font-family: 'google sans';
 }
 
 .intro1 {
@@ -42,6 +41,16 @@ body {
     pointer-events: all;
     content: "yourself!";
     animation: colorchange 6s infinite;
+}
+
+.stuff1 {
+    color: #ffffff;
+}
+
+.stuff1 span::before {
+    content: "do???";
+    pointer-events: all;
+    animation: colorchange 5s infinite;
 }
 
 .intro2 {
@@ -67,9 +76,11 @@ body {
     padding: 20px;
     background-color: #2A2A2A;
     z-index: 1;
+    font-family: 'google sans';
 }
 
 .top a {
+    text-align: center;
     color: #ffffff;
     text-decoration: none;
     padding: 21px;
@@ -90,35 +101,51 @@ body {
     padding: 15px;
     background-color: #2A2A2A;
     margin: auto;
-    z-index: 1;
-    padding-bottom: 100px;
+    z-index: 2;
 }
 
 .bottom a {
     animation: colorchange 3s infinite;
+    font-family: 'google sans';
 }
 
 .aboutme {
     text-align: center;
+    font-family: 'google sans'
+}
+
+.stuff li span::before {
+    content: "cry myself to sleep";
+    animation: colorchange 3s infinite;
+}
+
+.aboutme li span::before {
+    animation: colorchange 4s infinite;
+    content: "bush did 9/11";
+}
+
+li {
+    color: #ffffff;
+    font-size: 150%;
+    font-family: 'google sans';
+}
+
+p {
+    color: #ffffff;
+    font-size: 150%;
 }
 
 .stuff {
-
+    text-align: center;
+    font-family: 'google sans';
 }
 
 .clueless {
     width: 50%;
 }
+
 .mrq {
     color: #00ff00;
+    font-family: 'Times New Roman';
 }
-li {
-    text-align: center;
-    color: #fff;
-    font-size: x-large;
-}
-p {
-    text-align: center;
-    color: #fff;
-    font-size: x-large;
-}
+/* what a fucking mess. */
