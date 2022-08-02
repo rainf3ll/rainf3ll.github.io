@@ -99,7 +99,7 @@ body {
 }
 
 .aboutme {
-
+    text-align: center;
 }
 
 .stuff {
@@ -111,4 +111,14 @@ body {
 }
 .mrq {
     color: #00ff00;
+}
+li {
+    text-align: center;
+    color: #fff;
+    font-size: x-large;
+}
+p {
+    text-align: center;
+    color: #fff;
+    font-size: x-large;
 }
