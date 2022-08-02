@@ -70,10 +70,14 @@ body {
 
 .top {
     position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
     text-align: center;
     overflow: hidden;
     width: 100%;
     padding: 20px;
+    padding-left: 0px;
     background-color: #2A2A2A;
     z-index: 1;
     font-family: 'google sans';
@@ -95,6 +99,8 @@ body {
 
 .bottom {
     position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
     overflow: hidden;
     text-align: center;
