@@ -15,15 +15,15 @@ body {
 }
 
 @keyframes colorchange {
-    0%   {color: red;}
-    12%  {color: orange;}
-    24%  {color: yellow;}
-    36%  {color: green;}
-    48%  {color: cyan;}
-    60%  {color: blue;}
-    72%  {color: purple;}
-    84%  {color: pink;}
-    100% {color: red;}
+    0%   {color: #f00;}
+    12%  {color: #ffa500;}
+    24%  {color: #ffff00;}
+    36%  {color: #008000;}
+    48%  {color: #00ffff;}
+    60%  {color: #0000ff;}
+    72%  {color: #800080;}
+    84%  {color: #ffc0cb;}
+    100% {color: #f00;}
 }
 
 .main {
@@ -35,7 +35,7 @@ body {
 }
 
 .intro1 {
-    color: white;
+    color: #ffffff;
 }
 
 .intro1 span::before {
@@ -50,7 +50,7 @@ body {
 
 .intro3 {
     text-decoration: underline;
-    color: white;
+    color: #ffffff;
 }
 
 .intro3 span::before {
@@ -70,7 +70,7 @@ body {
 }
 
 .top a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     padding: 21px;
     font-size: large;
@@ -78,7 +78,7 @@ body {
 }
 
 .top a:hover {
-    background: white;
+    background: #ffffff;
     color: #2A2A2A;
 }
 
@@ -110,5 +110,5 @@ body {
     width: 50%;
 }
 .mrq {
-    color: lime;
+    color: #00ff00;
 }
