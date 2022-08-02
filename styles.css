@@ -1,23 +1,114 @@
+/*                  WARNING                    */
+/*           THIS IS AWFUL TO READ.            */
+/* I DONT CARE HOW YOU ARE GOING TO READ THIS. */
+
 html, body {
     scroll-behavior: smooth;
 }
+
 html {
     background-color: #444444;
 }
+
+body {
+    margin: 0px;
+}
+
+@keyframes colorchange {
+    0%   {color: red;}
+    12%  {color: orange;}
+    24%  {color: yellow;}
+    36%  {color: green;}
+    48%  {color: cyan;}
+    60%  {color: blue;}
+    72%  {color: purple;}
+    84%  {color: pink;}
+    100% {color: red;}
+}
+
+.main {
+    padding-top: 70px;
+}
+
 .introclass {
     text-align: center;
 }
+
 .intro1 {
     color: white;
 }
-.intro2 {
-    /* TODO: rainbow */
-    color: white;
+
+.intro1 span::before {
+    pointer-events: all;
+    content: "yourself!";
+    animation: colorchange 6s infinite;
 }
+
+.intro2 {
+    animation: colorchange 7s infinite;
+}
+
 .intro3 {
     text-decoration: underline;
     color: white;
 }
+
+.intro3 span::before {
+    pointer-events: all;
+    content: "you ";
+    animation: colorchange 5s infinite;
+}
+
+.top {
+    position: fixed;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
+    background-color: #2A2A2A;
+    z-index: 1;
+}
+
+.top a {
+    color: white;
+    text-decoration: none;
+    padding: 21px;
+    font-size: large;
+    margin: auto;
+}
+
+.top a:hover {
+    background: white;
+    color: #2A2A2A;
+}
+
+.bottom {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    background-color: #2A2A2A;
+    margin: auto;
+    z-index: 1;
+    padding-bottom: 100px;
+}
+
+.bottom a {
+    animation: colorchange 3s infinite;
+}
+
+.aboutme {
+
+}
+
+.stuff {
+
+}
+
 .clueless {
     width: 50%;
+}
+.mrq {
+    color: lime;
 }
