@@ -1,0 +1,23 @@
+html, body {
+    scroll-behavior: smooth;
+}
+html {
+    background-color: #444444;
+}
+.introclass {
+    text-align: center;
+}
+.intro1 {
+    color: white;
+}
+.intro2 {
+    /* TODO: rainbow */
+    color: white;
+}
+.intro3 {
+    text-decoration: underline;
+    color: white;
+}
+.clueless {
+    width: 50%;
+}
