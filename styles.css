@@ -5,7 +5,7 @@ html, body {
 }
 
 html {
-    background-color: #444444;
+    background-color: #1f1f1f;
 }
 
 body {
@@ -28,12 +28,7 @@ body {
     padding-top: 70px;
 }
 
-.introclass {
-    text-align: center;
-    font-family: 'google sans';
-}
-
-.intro1 {
+.intro1, .stuff1 {
     color: #ffffff;
 }
 
@@ -41,10 +36,6 @@ body {
     pointer-events: all;
     content: "yourself!";
     animation: colorchange 6s infinite;
-}
-
-.stuff1 {
-    color: #ffffff;
 }
 
 .stuff1 span::before {
@@ -76,7 +67,7 @@ body {
     width: 100%;
     padding: 20px;
     padding-left: 0px;
-    background-color: #2A2A2A;
+    background-color: #131313;
     z-index: 1;
     font-family: 'google sans';
 }
@@ -92,7 +83,7 @@ body {
 
 .top a:hover {
     background: #ffffff;
-    color: #2A2A2A;
+    color: #131313;
 }
 
 .bottom {
@@ -104,17 +95,17 @@ body {
     padding: 15px;
     padding-left: 0px;
     text-align: center;
-    background-color: #2A2A2A;
+    background-color: #131313;
     margin: auto;
     z-index: 2;
 }
 
 .bottom a {
-    animation: colorchange 3s infinite;
+    animation: colorchange 3.5s infinite;
     font-family: 'google sans';
 }
 
-.aboutme {
+.aboutme, .stuff, .introclass {
     text-align: center;
     font-family: 'google sans'
 }
@@ -129,19 +120,9 @@ body {
     content: "bush did 9/11";
 }
 
-li {
+li, p {
     color: #ffffff;
     font-size: 150%;
-    font-family: 'google sans';
-}
-
-p {
-    color: #ffffff;
-    font-size: 150%;
-}
-
-.stuff {
-    text-align: center;
     font-family: 'google sans';
 }
 
@@ -153,4 +134,3 @@ p {
     color: #00ff00;
     font-family: 'Times New Roman';
 }
-/* what a fucking mess. */
