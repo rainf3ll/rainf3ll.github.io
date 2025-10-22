@@ -67,10 +67,10 @@ nav a:visited {
     color: #ffffff;
 }
 a {
-    color: #008888;
+    color: #00DDDD;
 }
 a:visited {
-    color: #006666;
+    color: #51E172;
 }
 img {
     max-inline-size: 100%;
@@ -95,7 +95,7 @@ main {
     margin-bottom: 0.5vh;
 }
 #nav-current {
-    background-color: #777777;
+    background-color: #595959;
 }
 #web-badge {
     margin-top: 1.5vh;
@@ -110,7 +110,7 @@ main {
     margin-left: 3%;
 }
 .navblock:hover:not(#nav-current) {
-    background-color: #606060;
+    background-color: #4a4a4a;
 }
 .rain {
     position: absolute;
@@ -121,16 +121,18 @@ main {
     z-index: 1;
 }
 .drop {
+    will-change: transform;
+    transform: translateZ(0);
     position: absolute;
     top: -50px;
     border-left: 1px solid gray;
-    height: 30px;
-    animation: drop 1s linear infinite;
+    height: 20px;
+    animation: drop 1.3s linear infinite;
     opacity: 0.5;
 }
 @keyframes drop {
     to {
-        top: 100%;
+        transform: translateY(200vh);
     }
 }
 footer {
@@ -144,7 +146,7 @@ footer {
     padding-left: 1vw;
 }
 footer p {
-    color: #666666;
+    color: #ABABAB;
 }
 @keyframes colorchange {
     0%   {color: #ff0000;}
