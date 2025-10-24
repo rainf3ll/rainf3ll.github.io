@@ -110,6 +110,7 @@ main {
 .badge {
     margin-top: 1vh;
     margin-bottom: 0.5vh;
+    image-rendering: pixelated;
 }
 
 #nav-current {
