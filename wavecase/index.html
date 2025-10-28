@@ -9,13 +9,14 @@
 		<link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96">
 		<link rel="icon" type="image/svg+xml" href="/images/favicon/favicon.svg">
 		<link rel="icon" href="/images/favicon/favicon.ico">
+		<script type="module" src="/scripts/wavecase/wave.js"></script>
 		<meta name="title" content="rainf3ll's soup bowl">
 		<meta name="description" content="generic description of a generic person here.">
-		<meta property="og:title" content="rainf3ll's soup bowl">
+		<meta property="og:title" content="rainf3ll's soup bowl // wavecase">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="https://rainf3ll.github.io/wavecase">
 		<!-- <meta property="og:image" content="/images/whatever.png"> -->
-		<meta property="og:description" content="generic description of a generic person here.">
+		<meta property="og:description" content="a frankly annoying alternative to caesar's cipher">
 	</head>
 
 	<body>
@@ -34,8 +35,72 @@
 			<div class="rain" aria-hidden="true"><span class="drop" style="animation-delay:1.2s;left:1%;"></span><span class="drop" style="animation-delay:0.08s;left:3%;"></span><span class="drop" style="animation-delay:0.34s;left:5%;"></span><span class="drop" style="animation-delay:0.84s;left:7%;"></span><span class="drop" style="animation-delay:0.8s;left:9%;"></span><span class="drop" style="animation-delay:1.14s;left:11%;"></span><span class="drop" style="animation-delay:0.56s;left:13%;"></span><span class="drop" style="animation-delay:0.32s;left:15%;"></span><span class="drop" style="animation-delay:0.96s;left:17%;"></span><span class="drop" style="animation-delay:0.36s;left:19%;"></span><span class="drop" style="animation-delay:1.24s;left:21%;"></span><span class="drop" style="animation-delay:1.06s;left:23%;"></span><span class="drop" style="animation-delay:0.16s;left:25%;"></span><span class="drop" style="animation-delay:0.96s;left:27%;"></span><span class="drop" style="animation-delay:0.36s;left:29%;"></span><span class="drop" style="animation-delay:0.8s;left:31%;"></span><span class="drop" style="animation-delay:0.2s;left:33%;"></span><span class="drop" style="animation-delay:0.06s;left:35%;"></span><span class="drop" style="animation-delay:0.72s;left:37%;"></span><span class="drop" style="animation-delay:0s;left:39%;"></span><span class="drop" style="animation-delay:0.68s;left:41%;"></span><span class="drop" style="animation-delay:0.18s;left:43%;"></span><span class="drop" style="animation-delay:1.12s;left:45%;"></span><span class="drop" style="animation-delay:1.0s;left:47%;"></span><span class="drop" style="animation-delay:1.24s;left:49%;"></span><span class="drop" style="animation-delay:0.4s;left:51%;"></span><span class="drop" style="animation-delay:0.2s;left:53%;"></span><span class="drop" style="animation-delay:0.12s;left:55%;"></span><span class="drop" style="animation-delay:0s;left:57%;"></span><span class="drop" style="animation-delay:0.84s;left:59%;"></span><span class="drop" style="animation-delay:0.38s;left:61%;"></span><span class="drop" style="animation-delay:0.54s;left:63%;"></span><span class="drop" style="animation-delay:0.84s;left:65%;"></span><span class="drop" style="animation-delay:0.08s;left:67%;"></span><span class="drop" style="animation-delay:1.26s;left:69%;"></span><span class="drop" style="animation-delay:0.5s;left:71%;"></span><span class="drop" style="animation-delay:0.84s;left:73%;"></span><span class="drop" style="animation-delay:0.04s;left:75%;"></span><span class="drop" style="animation-delay:0.8s;left:77%;"></span><span class="drop" style="animation-delay:0.66s;left:79%;"></span><span class="drop" style="animation-delay:0.6s;left:81%;"></span><span class="drop" style="animation-delay:0.7s;left:83%;"></span><span class="drop" style="animation-delay:1.0s;left:85%;"></span><span class="drop" style="animation-delay:1.08s;left:87%;"></span><span class="drop" style="animation-delay:1.16s;left:89%;"></span><span class="drop" style="animation-delay:0.18s;left:91%;"></span><span class="drop" style="animation-delay:1.02s;left:93%;"></span><span class="drop" style="animation-delay:0.6s;left:95%;"></span><span class="drop" style="animation-delay:0.84s;left:97%;"></span><span class="drop" style="animation-delay:0.64s;left:99%;"></span></div>
 			<main>
 				<section>
-					<h3>wavecase</h3>
-					<p>/// WIP ///</p>
+					<h1>wavecase</h1>
+					<p>sometime this year (2025) i bashed my head against the wall with no results. the world kept
+						spinning.
+						everyones woes
+						continued.</p>
+					<p>wanting to recover from this silly state of mind i fell into, i got creative. changed my profile
+						picture into something unrecognizable and made of rainbow. and then, i decided that i will try to
+						get away with some secretspeak for as long as i could before some bunch of mods in a server i
+						frequent told me to stop goofing around for the nth time this year.</p>
+					<p>and thus, wavecase was born.</p>
+				</section>
+				<section>
+					<h3>what is wavecase even about</h3>
+					<p>TLDR: basically, it's a glorified caesar cipher.</p>
+					<br>
+					<p>what makes wavecase unique from caesar cipher is that the representation of a letter in the english
+						alphabet is replaced by four characters: &lt;, ^, &gt;, v.</p>
+					<p>additionally, characters such as numbers
+						0-9, +, -, ?,
+						!, /, *, =, ', ", ^, &lt;, &gt; were also replaced. everything else, except the space character, is
+						<strong>omitted</strong>
+						by this cipher. separate letters are differentiated by the &lt; character - it only appears at the
+						beginning of a wavecased character, and never anywhere else. in total, wavecase's dictionary
+						contains 49 characters (space included).</p>
+					<p>this results in a cipher that is both useless to humans (who would want to decode a single letter
+						made of combinations of four characters?)... as well as to computers (we just increased the size of
+						our text by 200%-500% when not counting omitted characters)</p>
+					<br>
+					<p>oh right. i didn't mention the caesar cipher part. what makes this cipher a derivative of caesar's
+						cipher is that after each space, the "dictionary" shifts by an offset that is incremented by one
+						each time. this means that the second "word" will have its dictionary shifted by 1, then the next
+						one will have shifted by 1+2, then the next one by 1+2+3, and so on.</p>
+					<p>as an example representation, this basically means that if we input "a b c", the letter a will match
+						its base counterpart, b will have shifted to represent c, and c will have shifted to represent f. or
+						in other words, a decoder not accounting for this will spit out "a c f".</p>
+					<br>
+					<p>if you are super bored (and i mean it), you are free to attempt to write a working encoder and
+						decoder. <a href="/scripts/wavecase/dict.json" target="_blank">you can find the dictionary here</a>.
+						<s>otherwise, feel free to try out the working encoder/decoder below.</s>
+						im
+						working on it.</p>
+				</section>
+				<section>
+					<h3>encode/decode wavecase</h3>
+					<noscript>
+						<style>
+						.wavy {
+						display: none !important;
+						}
+						</style>
+						<p>hey so idk how to tell you this but it seems like you have javascript disabled. you need to
+						enable it for this section to work. if you are reluctant to turn it on and still want to use it,
+						make it yourself :)</p>
+					</noscript>
+					<div class="wavy">
+						<form id="converter">
+							<p id="conv-modetext">current mode: encoding</p>
+							<br>
+							<textarea id="conv-in"></textarea>
+							<textarea id="conv-out" readonly></textarea>
+							<br>
+							<button id="conv-state" type="button">switch mode</button>
+							<button type="reset">clear</button>
+							<button id="conv-submit" type="submit">encode</button>
+						</form>
+					</div>
 				</section>
 			</main>
 			<footer>
