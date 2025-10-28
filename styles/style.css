@@ -272,7 +272,7 @@ footer p {
 
     @keyframes drop {
         to {
-            transform: translateY(300vh);
+            transform: translateY(350vh);
         }
     }
 

@@ -3,7 +3,8 @@ import dict from './dict.json' with { type: 'json' };
 const data = new Map(Object.entries(dict));
 const decoder = makeDecoder(data);
 const encoder = new Map(Object.entries(dict));
-const offsetter = new Map();
+const offsetterEncoder = new Map();
+const offsetterDecoder = new Map();
 const stateButton = document.getElementById("conv-state");
 const submitButton = document.getElementById("conv-submit");
 const form = document.getElementById("converter");
@@ -24,7 +25,7 @@ function resetDecoder() {
         if (k === ' ') {
             continue;
         }
-        offsetter.set(k, v);
+        offsetterDecoder.set(k, v);
     }
 }
 
@@ -33,30 +34,30 @@ function resetEncoder() {
         if (k === ' ') {
             continue;
         }
-        offsetter.set(k, v);
+        offsetterEncoder.set(k, v);
     }
 }
 
 function offsetEncoder(arg) {
-    const values = [...offsetter.values()];
-    const keys = [...offsetter.keys()];
-    const size = offsetter.size;
+    const values = [...offsetterEncoder.values()];
+    const keys = [...offsetterEncoder.keys()];
+    const size = offsetterEncoder.size;
     for (let i = 0; i < size; i++) {
-        offsetter.set(keys[i], values[(i + arg) % size]);
+        offsetterEncoder.set(keys[i], values[(i + arg) % size]);
     }
 }
 
 function offsetDecoder(off) {
-    const values = [...offsetter.values()];
-    const keys = [...offsetter.keys()];
-    const size = offsetter.size;
+    const values = [...offsetterDecoder.values()];
+    const keys = [...offsetterDecoder.keys()];
+    const size = offsetterDecoder.size;
     for (let i = 0; i < size; i++) {
-        offsetter.set(keys[i], values[(i - (off % size) + size) % size]);
+        offsetterDecoder.set(keys[i], values[(i - (off % size) + size) % size]);
     }
 }
 
 function convertToNotInsane(arg) {
-    let ret = offsetter.get(arg);
+    let ret = offsetterDecoder.get(arg);
     if (ret) {
         return ret;
     }
@@ -102,7 +103,7 @@ function encode(arg) {
     let offsetNum = 0;
     for (let c of arg) {
         c = c.toLowerCase();
-        let result = offsetter.get(c);
+        let result = offsetterEncoder.get(c);
         if (c === ' ') {
             offsetNum += 1;
             offsetEncoder(offsetNum);
