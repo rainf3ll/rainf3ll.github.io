@@ -97,6 +97,11 @@ main {
     flex: 1;
 }
 
+textarea {
+    color: white;
+    background-color: rgba(22, 22, 22, 0.5);
+}
+
 .main {
     z-index: 0;
     position: relative;
